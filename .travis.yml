@@ -1,0 +1,11 @@
+language: python
+python:
+  - "3.8"
+install:
+  - pip install poetry
+  - poetry --version
+  - poetry install
+  - poetry run python -V
+script:
+  - poetry run black -l 79 . --check
+  - poetry run make test
