@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "pcb"
+version = "0.1.0"
+description = ""
+authors = ["Gianluca Rossi <gr.gianlucarossi@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+mypy = "^0.910"
+black = "^21.6b0"
+isort = "^5.9.1"
+ipdb = "^0.13.9"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
